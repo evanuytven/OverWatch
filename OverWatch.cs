@@ -86,7 +86,7 @@ namespace OverWatch
 
         public void Run(Action<VMS.TPS.Common.Model.API.Application> a)
         {
-            _dispatcher.BeginInvoke(a, _app);
+            _dispatcher.Invoke(a, _app);
         }
     }
 }
